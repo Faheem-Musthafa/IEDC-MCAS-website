@@ -26,11 +26,105 @@ body {
     justify-content: center;
     align-items: center;
 }
-.navbar {
-    position: -webkit-sticky;
-    background: #000000;
-    
+
+/* Additional responsive rules for section3 */
+@media (max-width: 768px) {
+    .about-us-bottom {
+        padding: 3rem 1rem;
+    }
+
+    .row h1 {
+        font-size: 2.5rem;
+        margin: 0.4em 0;
+    }
+
+    .card {
+        padding: 2.5em 1em;
+        margin-bottom: 1rem;
+    }
+
+    .card .icon {
+        font-size: 2rem;
+        height: 1.5em;
+        width: 1.5em;
+    }
+
+    .card h3 {
+        font-size: 1.1rem;
+        margin: 0.8em 0 1.2em 0;
+    }
+
+    .card p {
+        line-height: 1.8em;
+        font-size: 0.9rem;
+    }
 }
+
+@media (max-width: 576px) {
+    .about-us-bottom {
+        padding: 2rem 0.5rem;
+    }
+
+    .row h1 {
+        font-size: 2rem;
+        margin: 0.3em 0;
+    }
+
+    .card {
+        padding: 2em 0.8em;
+        margin-bottom: 0.8rem;
+    }
+
+    .card .icon {
+        font-size: 1.8rem;
+        height: 1.3em;
+        width: 1.3em;
+    }
+
+    .card h3 {
+        font-size: 1rem;
+        margin: 0.6em 0 1em 0;
+    }
+
+    .card p {
+        line-height: 1.6em;
+        font-size: 0.85rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .about-us-bottom {
+        padding: 1.5rem 0.25rem;
+    }
+
+    .row h1 {
+        font-size: 1.8rem;
+        margin: 0.2em 0;
+    }
+
+    .card {
+        padding: 1.5em 0.6em;
+        margin-bottom: 0.6rem;
+    }
+
+    .card .icon {
+        font-size: 1.5rem;
+        height: 1.1em;
+        width: 1.1em;
+    }
+
+    .card h3 {
+        font-size: 0.9rem;
+        margin: 0.5em 0 0.8em 0;
+    }
+
+    .card p {
+        line-height: 1.4em;
+        font-size: 0.8rem;
+    }
+}
+/**/
+/*section3 over */
 
 nav {
     width: 100vw;
@@ -87,6 +181,98 @@ nav {
     width: 100vw;
     background: linear-gradient(180deg, #F5F5F5 0%, rgba(245, 245, 245, 0) 100%);
 }
+
+/* Navbar responsive rules */
+@media (max-width: 768px) {
+    .nav-link {
+        margin-left: 15px;
+        font-size: 14px;
+    }
+
+    .navbar-brand {
+        margin-left: 15px;
+        font-size: 18px;
+    }
+
+    .btn {
+        margin-left: 15px;
+        margin-right: 15px;
+        padding: 0.4rem 0.8rem;
+        font-size: 14px;
+    }
+
+    .navbar-toggler {
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+    #connectBtn {
+        padding: 0.4rem 0.8rem;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 576px) {
+    .nav-link {
+        margin-left: 10px;
+        font-size: 13px;
+    }
+
+    .navbar-brand {
+        margin-left: 10px;
+        font-size: 16px;
+    }
+
+    .btn {
+        margin-left: 10px;
+        margin-right: 10px;
+        padding: 0.3rem 0.6rem;
+        font-size: 13px;
+    }
+
+    .navbar-toggler {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    #connectBtn {
+        padding: 0.3rem 0.6rem;
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 480px) {
+    .sec1 {
+        height: 180px;
+    }
+
+    .nav-link {
+        margin-left: 5px;
+        font-size: 12px;
+    }
+
+    .navbar-brand {
+        margin-left: 5px;
+        font-size: 14px;
+    }
+
+    .btn {
+        margin-left: 5px;
+        margin-right: 5px;
+        padding: 0.25rem 0.5rem;
+        font-size: 12px;
+    }
+
+    .navbar-toggler {
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+
+    #connectBtn {
+        padding: 0.25rem 0.5rem;
+        font-size: 12px;
+    }
+}
 /*section1*/
 span {
     color: #e6bf24;
@@ -133,6 +319,79 @@ span {
 @media screen and (max-width: 700px){
     .feature-box h4{
         font-size: 2.188rem;
+    }
+}
+
+/* Additional responsive rules for section1 */
+@media (max-width: 768px) {
+    .feature-box {
+        padding: 15px;
+    }
+
+    .feature-box h4 {
+        font-size: 2rem;
+        margin-top: 5%;
+    }
+
+    .homepara {
+        margin: 30px auto;
+        font-size: 1.2rem;
+    }
+
+    .homepara2 {
+        font-size: 16px;
+    }
+
+    .homepic {
+        padding: 20px;
+    }
+}
+
+@media (max-width: 576px) {
+    .feature-box {
+        padding: 10px;
+    }
+
+    .feature-box h4 {
+        font-size: 1.8rem;
+        margin-top: 2%;
+    }
+
+    .homepara {
+        margin: 20px auto;
+        font-size: 1rem;
+    }
+
+    .homepara2 {
+        font-size: 14px;
+    }
+
+    .homepic {
+        padding: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .feature-box {
+        padding: 8px;
+    }
+
+    .feature-box h4 {
+        font-size: 1.5rem;
+        margin-top: 1%;
+    }
+
+    .homepara {
+        margin: 15px auto;
+        font-size: 0.9rem;
+    }
+
+    .homepara2 {
+        font-size: 13px;
+    }
+
+    .homepic {
+        padding: 10px;
     }
 }
 /*section 1 over*/
@@ -199,6 +458,76 @@ span {
     }
     .right-col p{
         margin: 3rem;
+    }
+}
+
+/* Additional responsive rules for section2 */
+@media (max-width: 768px) {
+    #about {
+        padding: 15px;
+        margin: 15px;
+    }
+
+    .about-h3 {
+        font-size: 1.8rem;
+        margin-bottom: 1.5rem;
+        margin-top: 1.5rem;
+    }
+
+    .left-col img {
+        padding: 30px 20px;
+    }
+
+    .right-col p {
+        font-size: 15px;
+        line-height: 24px;
+        margin: 2rem 1rem 0 0;
+    }
+}
+
+@media (max-width: 576px) {
+    #about {
+        padding: 10px;
+        margin: 10px;
+    }
+
+    .about-h3 {
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+        margin-top: 1rem;
+    }
+
+    .left-col img {
+        padding: 20px 10px;
+    }
+
+    .right-col p {
+        font-size: 14px;
+        line-height: 22px;
+        margin: 1.5rem 0.5rem 0 0;
+    }
+}
+
+@media (max-width: 480px) {
+    #about {
+        padding: 8px;
+        margin: 8px;
+    }
+
+    .about-h3 {
+        font-size: 1.3rem;
+        margin-bottom: 0.8rem;
+        margin-top: 0.8rem;
+    }
+
+    .left-col img {
+        padding: 15px 5px;
+    }
+
+    .right-col p {
+        font-size: 13px;
+        line-height: 20px;
+        margin: 1rem 0.25rem 0 0;
     }
 }
 /* section2 Over */

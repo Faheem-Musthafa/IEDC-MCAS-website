@@ -73,11 +73,97 @@ nav {
     background: linear-gradient(180deg, #F5F5F5 0%, rgba(245, 245, 245, 0) 100%);
 }
 
-span {
-    color: #e6bf24;
+/* Navbar responsive rules */
+@media (max-width: 768px) {
+    .nav-link {
+        margin-left: 15px;
+        font-size: 14px;
+    }
+
+    .navbar-brand {
+        margin-left: 15px;
+        font-size: 18px;
+    }
+
+    .btn {
+        margin-left: 15px;
+        margin-right: 15px;
+        padding: 0.4rem 0.8rem;
+        font-size: 14px;
+    }
+
+    .navbar-toggler {
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+    #connectBtn {
+        padding: 0.4rem 0.8rem;
+        font-size: 14px;
+    }
 }
 
+@media (max-width: 576px) {
+    .nav-link {
+        margin-left: 10px;
+        font-size: 13px;
+    }
 
+    .navbar-brand {
+        margin-left: 10px;
+        font-size: 16px;
+    }
+
+    .btn {
+        margin-left: 10px;
+        margin-right: 10px;
+        padding: 0.3rem 0.6rem;
+        font-size: 13px;
+    }
+
+    .navbar-toggler {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    #connectBtn {
+        padding: 0.3rem 0.6rem;
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 480px) {
+    .sec1 {
+        height: 180px;
+    }
+
+    .nav-link {
+        margin-left: 5px;
+        font-size: 12px;
+    }
+
+    .navbar-brand {
+        margin-left: 5px;
+        font-size: 14px;
+    }
+
+    .btn {
+        margin-left: 5px;
+        margin-right: 5px;
+        padding: 0.25rem 0.5rem;
+        font-size: 12px;
+    }
+
+    .navbar-toggler {
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+
+    #connectBtn {
+        padding: 0.25rem 0.5rem;
+        font-size: 12px;
+    }
+}
 /*navbar-over*/
 body {
     justify-content: center;
@@ -121,12 +207,61 @@ body {
     }
 }
 
+@media (max-width: 768px) {
+    .header {
+        margin-top: 30px;
+        margin-bottom: 20px;
+    }
+
+    .header h1 {
+        font-size: 2.5rem;
+    }
+
+    .subheading {
+        font-size: 1.5rem;
+        margin-top: 3rem;
+        margin-bottom: 0;
+    }
+}
+
+@media (max-width: 576px) {
+    .header {
+        margin-top: 20px;
+        margin-bottom: 15px;
+    }
+
+    .header h1 {
+        font-size: 2rem;
+    }
+
+    .subheading {
+        font-size: 1.3rem;
+        margin-top: 2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .header {
+        margin-top: 15px;
+        margin-bottom: 10px;
+    }
+
+    .header h1 {
+        font-size: 1.8rem;
+    }
+
+    .subheading {
+        font-size: 1.1rem;
+        margin-top: 1.5rem;
+    }
+}
+
 
 /* Point Table Section Starting*/
 
 
 .chart-wrapper {
-   
+
     width: 100%;
     max-width: 900px;
     height: 460px;
@@ -142,19 +277,26 @@ body {
     height: 100%;
 }
 
-
-
 @media (max-width: 768px) {
-    @media (max-width: 768px) {
-        .chart-wrapper #piechart_3d {
-            width: 100%;
-            height: 100%;
-        }
+    .chart-wrapper {
+        max-width: 700px;
+        height: 380px;
     }
-
 }
 
-.point-table-btn {
+@media (max-width: 576px) {
+    .chart-wrapper {
+        max-width: 500px;
+        height: 320px;
+    }
+}
+
+@media (max-width: 480px) {
+    .chart-wrapper {
+        max-width: 350px;
+        height: 280px;
+    }
+}.point-table-btn {
     display: block;
     text-align: center; 
     margin-top: 10px;
@@ -316,15 +458,129 @@ body {
     cursor: pointer;
 }
 
-@media(max-width:1240px) {
-    .point {
-        width: 100%;
-        height: auto;
-        padding: 90px 2%;
+@media (max-width: 768px) {
+    #point-content {
+        grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+        margin-top: 3rem;
+        gap: 1rem;
     }
 
-    .header h1 {
-        font-size: 3.2rem;
+    .point-card {
+        height: 250px;
+        width: 200px;
+        padding: 12px;
+        margin: 3px;
+        margin-bottom: 20px;
+    }
+
+    .point-card h3 {
+        font-size: 15px;
+        margin-bottom: 5px;
+    }
+
+    .point-card .circle-card {
+        width: 130px;
+        height: 170px;
+    }
+
+    .point-card .circle-card .percent {
+        width: 130px;
+        height: 130px;
+    }
+
+    .point-card .circle-card .percent svg {
+        width: 130px;
+        height: 130px;
+    }
+
+    .counter {
+        font-size: 1.3em;
+    }
+}
+
+@media (max-width: 576px) {
+    #point-content {
+        grid-template-columns: repeat(auto-fit, minmax(180px, auto));
+        margin-top: 2.5rem;
+        gap: 0.8rem;
+    }
+
+    .point-card {
+        height: 230px;
+        width: 180px;
+        padding: 10px;
+        margin: 2px;
+        margin-bottom: 15px;
+    }
+
+    .point-card h3 {
+        font-size: 14px;
+        margin-bottom: 4px;
+    }
+
+    .point-card .circle-card {
+        width: 110px;
+        height: 150px;
+    }
+
+    .point-card .circle-card .percent {
+        width: 110px;
+        height: 110px;
+    }
+
+    .point-card .circle-card .percent svg {
+        width: 110px;
+        height: 110px;
+    }
+
+    .counter {
+        font-size: 1.2em;
+    }
+}
+
+@media (max-width: 480px) {
+    #point-content {
+        grid-template-columns: repeat(auto-fit, minmax(160px, auto));
+        margin-top: 2rem;
+        gap: 0.5rem;
+        padding-bottom: 80px;
+    }
+
+    .point-card {
+        height: 210px;
+        width: 160px;
+        padding: 8px;
+        margin: 1px;
+        margin-bottom: 12px;
+    }
+
+    .point-card h3 {
+        font-size: 13px;
+        margin-bottom: 3px;
+    }
+
+    .point-card .circle-card {
+        width: 100px;
+        height: 130px;
+    }
+
+    .point-card .circle-card .percent {
+        width: 100px;
+        height: 100px;
+    }
+
+    .point-card .circle-card .percent svg {
+        width: 100px;
+        height: 100px;
+    }
+
+    .counter {
+        font-size: 1.1em;
+    }
+
+    .point-table-btn {
+        margin-top: 5px;
+        margin-bottom: 80px;
     }
 }
 
@@ -383,6 +639,10 @@ hr {
 /* Responsive Styling */
 
 @media (max-width: 768px) {
+    footer {
+        padding: 15px;
+    }
+
     .footerlogo {
         flex-direction: row;
         justify-content: center;
@@ -391,6 +651,65 @@ hr {
 
     .footer-content {
         font-size: 12px;
+    }
+
+    #fotrlogo {
+        width: 80px;
+    }
+
+    #icom, #icom-small {
+        width: 18px;
+        height: 18px;
+        margin: 0 4px;
+    }
+}
+
+@media (max-width: 576px) {
+    footer {
+        padding: 12px;
+    }
+
+    .footer-content {
+        font-size: 11px;
+    }
+
+    #fotrlogo {
+        width: 70px;
+    }
+
+    #icom, #icom-small {
+        width: 16px;
+        height: 16px;
+        margin: 0 3px;
+    }
+
+    hr {
+        margin: 8px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    footer {
+        padding: 10px;
+    }
+
+    .footer-content {
+        font-size: 10px;
+        margin-bottom: 8px;
+    }
+
+    #fotrlogo {
+        width: 60px;
+    }
+
+    #icom, #icom-small {
+        width: 14px;
+        height: 14px;
+        margin: 0 2px;
+    }
+
+    hr {
+        margin: 6px 0;
     }
 }
 

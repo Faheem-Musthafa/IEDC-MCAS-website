@@ -1,0 +1,74 @@
+/* 
+ * YEAR TOGGLE FEATURE - QUICK REFERENCE
+ * ====================================
+ * 
+ * Button Layout:
+ * 
+ * +------------------+  +------------------+
+ * |   2024-25 ✓     |  |     2023-24      |  <- Year Toggle (Yellow/Gold)
+ * +------------------+  +------------------+
+ * 
+ * +------------------+  +------------------+
+ * | Execom Committee |  |      Teams       |  <- Section Toggle (Blue/Yellow)
+ * +------------------+  +------------------+
+ * 
+ * 
+ * How it works:
+ * =============
+ * 
+ * 1. Page loads → Shows 2024-25 by default
+ * 2. User clicks year button → Content switches
+ * 3. Header updates automatically
+ * 4. Previous year content is hidden
+ * 
+ * 
+ * JavaScript Functions:
+ * ====================
+ * 
+ * switchYear(year)           - Main function to switch between years
+ *                             - Updates header text
+ *                             - Shows/hides content divs
+ * 
+ * showExecomSection()        - Shows Execom tab
+ * showTeamsSection()         - Shows Teams tab
+ * 
+ * 
+ * CSS Classes:
+ * ============
+ * 
+ * .year-2024-25              - Wrapper for 2024-25 content
+ * .year-2023-24              - Wrapper for 2023-24 content (current data)
+ * .btn-outline-warning       - Year toggle button styling
+ * .execom-selection          - Container for both toggle groups
+ * 
+ * 
+ * Content Structure:
+ * ==================
+ * 
+ * execomSection
+ *   └── header (#execomYearHeader)
+ *   └── div.year-2024-25
+ *       └── [Add new 2024-25 team here]
+ *   └── div.year-2023-24
+ *       └── IEDC Staffs
+ *       └── Execom Members
+ *           └── All current team members
+ * 
+ * 
+ * Color Scheme:
+ * =============
+ * 
+ * Year buttons:
+ * - Default:  Dark gray bg (#2a2a2a), Yellow border/text (#f8d143)
+ * - Active:   Yellow bg (#f8d143), Black text
+ * - Hover:    Gold bg (#e6bf24), Black text
+ * 
+ * 
+ * Mobile Responsive:
+ * ==================
+ * 
+ * Buttons stack vertically on mobile devices
+ * Font size and padding adjust automatically
+ * All existing responsive rules still apply
+ * 
+ */
