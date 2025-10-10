@@ -83,13 +83,108 @@ span {
     color: #e6bf24;
 }
 
+/* Navbar responsive rules */
+@media (max-width: 768px) {
+    .nav-link {
+        margin-left: 15px;
+        font-size: 14px;
+    }
+
+    .navbar-brand {
+        margin-left: 15px;
+        font-size: 18px;
+    }
+
+    .btn {
+        margin-left: 15px;
+        margin-right: 15px;
+        padding: 0.4rem 0.8rem;
+        font-size: 14px;
+    }
+
+    .navbar-toggler {
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+    #connectBtn {
+        padding: 0.4rem 0.8rem;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 576px) {
+    .nav-link {
+        margin-left: 10px;
+        font-size: 13px;
+    }
+
+    .navbar-brand {
+        margin-left: 10px;
+        font-size: 16px;
+    }
+
+    .btn {
+        margin-left: 10px;
+        margin-right: 10px;
+        padding: 0.3rem 0.6rem;
+        font-size: 13px;
+    }
+
+    .navbar-toggler {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    #connectBtn {
+        padding: 0.3rem 0.6rem;
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 480px) {
+    .sec1 {
+        height: 180px;
+    }
+
+    .nav-link {
+        margin-left: 5px;
+        font-size: 12px;
+    }
+
+    .navbar-brand {
+        margin-left: 5px;
+        font-size: 14px;
+    }
+
+    .btn {
+        margin-left: 5px;
+        margin-right: 5px;
+        padding: 0.25rem 0.5rem;
+        font-size: 12px;
+    }
+
+    .navbar-toggler {
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+
+    #connectBtn {
+        padding: 0.25rem 0.5rem;
+        font-size: 12px;
+    }
+}
+
 
 /*navbar-over*/
 /*toggle head start*/
 .execom-selection {
   display: flex;
+  flex-direction: column;
+  align-items: center;
   justify-content: center;
   margin-top: 20px;
+  gap: 15px;
 }
 
 .btn-group {
@@ -118,6 +213,27 @@ span {
   border-color: #f8d143;
   color: #000000;
 }
+
+/* Year toggle styling */
+.btn-group input[type="radio"].btn-check + label.btn-outline-warning {
+  background-color: #2a2a2a;
+  border-color: #f8d143;
+  color: #f8d143;
+  font-weight: 600;
+  padding: 8px 20px;
+}
+
+.btn-group input[type="radio"].btn-check:checked + label.btn-outline-warning {
+  background-color: #f8d143;
+  border-color: #f8d143;
+  color: #000000;
+}
+
+.btn-group input[type="radio"].btn-check:hover + label.btn-outline-warning {
+  background-color: #e6bf24;
+  border-color: #e6bf24;
+  color: #000000;
+}
 @media (max-width: 768px) {
   .btn-check + .btn-outline-primary,
   .btn-primary {
@@ -138,6 +254,62 @@ span {
   .btn-group label.btn-primary {
       padding: 5px 10px;
       font-size: 12px;
+  }
+
+  /* Year toggle responsive rules */
+  .btn-group input[type="radio"].btn-check + label.btn-outline-warning {
+      padding: 6px 12px;
+      font-size: 12px;
+      font-weight: 600;
+      margin: 2px;
+  }
+}
+
+/* Additional mobile responsive rules for year toggles */
+@media (max-width: 576px) {
+  .execom-selection {
+      gap: 10px;
+      margin-top: 15px;
+  }
+
+  .btn-group {
+      flex-direction: column;
+      width: 100%;
+      max-width: 280px;
+  }
+
+  .btn-group input[type="radio"].btn-check + label.btn-outline-warning {
+      padding: 8px 16px;
+      font-size: 14px;
+      font-weight: 600;
+      width: 100%;
+      text-align: center;
+      margin: 3px 0;
+  }
+
+  .btn-group input[type="radio"].btn-check + label.btn-outline-primary {
+      padding: 8px 16px;
+      font-size: 14px;
+      width: 100%;
+      text-align: center;
+      margin: 3px 0;
+  }
+}
+
+/* Extra small devices */
+@media (max-width: 480px) {
+  .execom-selection {
+      gap: 8px;
+      margin-top: 10px;
+      padding: 0 10px;
+  }
+
+  .btn-group input[type="radio"].btn-check + label.btn-outline-warning,
+  .btn-group input[type="radio"].btn-check + label.btn-outline-primary {
+      padding: 6px 12px;
+      font-size: 13px;
+      font-weight: 600;
+      margin: 2px 0;
   }
 }
 /*toggle head over*/
@@ -185,6 +357,61 @@ body{
     justify-content: center;
 }
 
+/* Responsive rules for main content */
+@media (max-width: 768px) {
+    .header {
+        margin-top: 30px;
+        margin-bottom: 8px;
+    }
+
+    .execom {
+        margin-bottom: 50px;
+        padding: 0 1rem;
+    }
+
+    .team-content {
+        margin-top: 2rem;
+        grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+        gap: 1rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .header {
+        margin-top: 20px;
+        margin-bottom: 5px;
+    }
+
+    .execom {
+        margin-bottom: 40px;
+        padding: 0 0.5rem;
+    }
+
+    .team-content {
+        margin-top: 1.5rem;
+        grid-template-columns: repeat(auto-fit, minmax(180px, auto));
+        gap: 0.8rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .header {
+        margin-top: 15px;
+        margin-bottom: 3px;
+    }
+
+    .execom {
+        margin-bottom: 30px;
+        padding: 0 0.25rem;
+    }
+
+    .team-content {
+        margin-top: 1rem;
+        grid-template-columns: 1fr;
+        gap: 0.5rem;
+    }
+}
+
 .team-content img {
     width: 80%;
     height:auto;
@@ -213,6 +440,28 @@ body{
     margin-bottom: 0;
     color: #ffffff;
     text-align: center;
+}
+
+/* Responsive rules for subheading */
+@media (max-width: 768px) {
+    .subheading {
+        font-size: 1.5rem;
+        margin-top: 2rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .subheading {
+        font-size: 1.3rem;
+        margin-top: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .subheading {
+        font-size: 1.2rem;
+        margin-top: 1.2rem;
+    }
 }
 
 .execom-card {
@@ -269,6 +518,95 @@ body{
     cursor: pointer;
 }
 
+/* Responsive rules for execom cards */
+@media (max-width: 768px) {
+    .execom-card {
+        width: 200px;
+        padding: 12px;
+        margin: 3px;
+        margin-bottom: 15px;
+    }
+
+    .execom-card h3 {
+        font-size: 18px;
+    }
+
+    .execom-card h5 {
+        font-size: 13px;
+        margin-top: 12px;
+        margin-bottom: 12px;
+    }
+
+    .execom-card h4 {
+        font-size: 13px;
+        margin-bottom: 14px;
+    }
+
+    .icons i {
+        font-size: 18px;
+        margin: 0 7px;
+    }
+}
+
+@media (max-width: 576px) {
+    .execom-card {
+        width: 180px;
+        padding: 10px;
+        margin: 2px;
+        margin-bottom: 12px;
+    }
+
+    .execom-card h3 {
+        font-size: 16px;
+    }
+
+    .execom-card h5 {
+        font-size: 12px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .execom-card h4 {
+        font-size: 12px;
+        margin-bottom: 12px;
+    }
+
+    .icons i {
+        font-size: 16px;
+        margin: 0 5px;
+    }
+}
+
+@media (max-width: 480px) {
+    .execom-card {
+        width: 100%;
+        max-width: 160px;
+        padding: 8px;
+        margin: 1px;
+        margin-bottom: 10px;
+    }
+
+    .execom-card h3 {
+        font-size: 14px;
+    }
+
+    .execom-card h5 {
+        font-size: 11px;
+        margin-top: 8px;
+        margin-bottom: 8px;
+    }
+
+    .execom-card h4 {
+        font-size: 11px;
+        margin-bottom: 10px;
+    }
+
+    .icons i {
+        font-size: 14px;
+        margin: 0 3px;
+    }
+}
+
 @media(max-width:1240px) {
     .execom {
         width: 100%;
@@ -278,6 +616,58 @@ body{
 
     .header h1 {
         font-size: 3.2rem;
+    }
+}
+
+@media(max-width:768px) {
+    .execom {
+        padding: 60px 1rem;
+    }
+
+    .header h1 {
+        font-size: 2.5rem;
+    }
+}
+
+@media(max-width:576px) {
+    .execom {
+        padding: 40px 0.5rem;
+    }
+
+    .header h1 {
+        font-size: 2rem;
+    }
+}
+
+@media(max-width:480px) {
+    .execom {
+        padding: 30px 0.25rem;
+    }
+
+    .header h1 {
+        font-size: 1.8rem;
+    }
+}
+
+/* Additional responsive rules for header */
+@media (max-width: 768px) {
+    .header h1 {
+        font-size: 2.5rem;
+        margin-bottom: 15px;
+    }
+}
+
+@media (max-width: 576px) {
+    .header h1 {
+        font-size: 2rem;
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .header h1 {
+        font-size: 1.8rem;
+        margin-bottom: 8px;
     }
 }
 /*Teams start*/
@@ -298,6 +688,43 @@ body{
 }
 .card__container {
   padding-block: 5rem;
+}
+
+/* Responsive rules for container and card container */
+@media (max-width: 768px) {
+    .container .subheading {
+        font-size: 1.5rem;
+        margin-top: 0.8rem;
+        margin-bottom: 2rem;
+    }
+
+    .card__container {
+        padding-block: 3rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .container .subheading {
+        font-size: 1.3rem;
+        margin-top: 0.6rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .card__container {
+        padding-block: 2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .container .subheading {
+        font-size: 1.2rem;
+        margin-top: 0.5rem;
+        margin-bottom: 1rem;
+    }
+
+    .card__container {
+        padding-block: 1.5rem;
+    }
 }
 
 .card__content {
@@ -369,6 +796,88 @@ body{
   margin-bottom: 17px;
   letter-spacing: 2px;
 }
+
+/* Responsive rules for swiper cards */
+@media (max-width: 768px) {
+    .card__article {
+        width: 200px;
+        padding: 12px;
+        margin: 3px;
+    }
+
+    .card__data {
+        padding: 1.2rem 1.5rem;
+    }
+
+    .card__name {
+        font-size: 18px;
+    }
+
+    .card__container h5 {
+        font-size: 13px;
+        margin-top: 12px;
+        margin-bottom: 12px;
+    }
+
+    .card__container h4 {
+        font-size: 13px;
+        margin-bottom: 14px;
+    }
+}
+
+@media (max-width: 576px) {
+    .card__article {
+        width: 180px;
+        padding: 10px;
+        margin: 2px;
+    }
+
+    .card__data {
+        padding: 1rem 1.2rem;
+    }
+
+    .card__name {
+        font-size: 16px;
+    }
+
+    .card__container h5 {
+        font-size: 12px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .card__container h4 {
+        font-size: 12px;
+        margin-bottom: 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    .card__article {
+        width: 160px;
+        padding: 8px;
+        margin: 1px;
+    }
+
+    .card__data {
+        padding: 0.8rem 1rem;
+    }
+
+    .card__name {
+        font-size: 14px;
+    }
+
+    .card__container h5 {
+        font-size: 11px;
+        margin-top: 8px;
+        margin-bottom: 8px;
+    }
+
+    .card__container h4 {
+        font-size: 11px;
+        margin-bottom: 10px;
+    }
+}
 /* Swiper class */
 .swiper-button-prev:after,
 .swiper-button-next:after {
@@ -433,6 +942,46 @@ body{
   .swiper-button-next {
     right: -1rem;
   }
+}
+
+/* Additional responsive rules for swiper content */
+@media (max-width: 768px) {
+    .card__content {
+        margin-inline: 1rem;
+        padding-left: 0.5rem;
+        padding-right: 2rem;
+    }
+
+    .swiper-button-prev,
+    .swiper-button-next {
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .card__content {
+        margin-inline: 0.5rem;
+        padding-left: 0.25rem;
+        padding-right: 1rem;
+    }
+
+    .swiper-button-prev,
+    .swiper-button-next {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .card__content {
+        margin-inline: 0.25rem;
+        padding-left: 0.1rem;
+        padding-right: 0.5rem;
+    }
+
+    .swiper-button-prev,
+    .swiper-button-next {
+        font-size: 1.8rem;
+    }
 }
 /*team section1 over*/
 /*=============== Team 2- Quality Operations ===============*/
@@ -501,6 +1050,46 @@ body{
     right: -1rem;
   }
 }
+
+/* Additional responsive rules for swiper content2 */
+@media (max-width: 768px) {
+    .card__content2 {
+        margin-inline: 1rem;
+        padding-left: 0.5rem;
+        padding-right: 2rem;
+    }
+
+    .swiper-button-prev2,
+    .swiper-button-next2 {
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .card__content2 {
+        margin-inline: 0.5rem;
+        padding-left: 0.25rem;
+        padding-right: 1rem;
+    }
+
+    .swiper-button-prev2,
+    .swiper-button-next2 {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .card__content2 {
+        margin-inline: 0.25rem;
+        padding-left: 0.1rem;
+        padding-right: 0.5rem;
+    }
+
+    .swiper-button-prev2,
+    .swiper-button-next2 {
+        font-size: 1.8rem;
+    }
+}
 /*=============== Team 3- Technical ===============*/
 /*team section3 start*/
 .card__content3 {
@@ -566,6 +1155,46 @@ body{
   .swiper-button-next3 {
     right: -1rem;
   }
+}
+
+/* Additional responsive rules for swiper content3 */
+@media (max-width: 768px) {
+    .card__content3 {
+        margin-inline: 1rem;
+        padding-left: 0.5rem;
+        padding-right: 2rem;
+    }
+
+    .swiper-button-prev3,
+    .swiper-button-next3 {
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .card__content3 {
+        margin-inline: 0.5rem;
+        padding-left: 0.25rem;
+        padding-right: 1rem;
+    }
+
+    .swiper-button-prev3,
+    .swiper-button-next3 {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .card__content3 {
+        margin-inline: 0.25rem;
+        padding-left: 0.1rem;
+        padding-right: 0.5rem;
+    }
+
+    .swiper-button-prev3,
+    .swiper-button-next3 {
+        font-size: 1.8rem;
+    }
 }
 
 /*=============== Team 4- Branding and Marketing ===============*/
@@ -635,6 +1264,46 @@ body{
   }
 }
 
+/* Additional responsive rules for swiper content4 */
+@media (max-width: 768px) {
+    .card__content4 {
+        margin-inline: 1rem;
+        padding-left: 0.5rem;
+        padding-right: 2rem;
+    }
+
+    .swiper-button-prev4,
+    .swiper-button-next4 {
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .card__content4 {
+        margin-inline: 0.5rem;
+        padding-left: 0.25rem;
+        padding-right: 1rem;
+    }
+
+    .swiper-button-prev4,
+    .swiper-button-next4 {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .card__content4 {
+        margin-inline: 0.25rem;
+        padding-left: 0.1rem;
+        padding-right: 0.5rem;
+    }
+
+    .swiper-button-prev4,
+    .swiper-button-next4 {
+        font-size: 1.8rem;
+    }
+}
+
 /*=============== Team 5- Creative ===============*/
 /*team section5 start*/
 .card__content5 {
@@ -700,6 +1369,46 @@ body{
   .swiper-button-next5 {
     right: -1rem;
   }
+}
+
+/* Additional responsive rules for swiper content5 */
+@media (max-width: 768px) {
+    .card__content5 {
+        margin-inline: 1rem;
+        padding-left: 0.5rem;
+        padding-right: 2rem;
+    }
+
+    .swiper-button-prev5,
+    .swiper-button-next5 {
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .card__content5 {
+        margin-inline: 0.5rem;
+        padding-left: 0.25rem;
+        padding-right: 1rem;
+    }
+
+    .swiper-button-prev5,
+    .swiper-button-next5 {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .card__content5 {
+        margin-inline: 0.25rem;
+        padding-left: 0.1rem;
+        padding-right: 0.5rem;
+    }
+
+    .swiper-button-prev5,
+    .swiper-button-next5 {
+        font-size: 1.8rem;
+    }
 }
 
 /*=============== Team 6- community ===============*/
@@ -769,6 +1478,46 @@ body{
   }
 }
 
+/* Additional responsive rules for swiper content6 */
+@media (max-width: 768px) {
+    .card__content6 {
+        margin-inline: 1rem;
+        padding-left: 0.5rem;
+        padding-right: 2rem;
+    }
+
+    .swiper-button-prev6,
+    .swiper-button-next6 {
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .card__content6 {
+        margin-inline: 0.5rem;
+        padding-left: 0.25rem;
+        padding-right: 1rem;
+    }
+
+    .swiper-button-prev6,
+    .swiper-button-next6 {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .card__content6 {
+        margin-inline: 0.25rem;
+        padding-left: 0.1rem;
+        padding-right: 0.5rem;
+    }
+
+    .swiper-button-prev6,
+    .swiper-button-next6 {
+        font-size: 1.8rem;
+    }
+}
+
 /*=============== Team 7- Finance ===============*/
 /*team section7 start*/
 .card__content7 {
@@ -834,6 +1583,52 @@ body{
   .swiper-button-next7 {
     right: -1rem;
   }
+}
+
+/* Additional responsive rules for swiper content7-10 */
+@media (max-width: 768px) {
+    .card__content7, .card__content8, .card__content9, .card__content10 {
+        margin-inline: 1rem;
+        padding-left: 0.5rem;
+        padding-right: 2rem;
+    }
+
+    .swiper-button-prev7, .swiper-button-next7,
+    .swiper-button-prev8, .swiper-button-next8,
+    .swiper-button-prev9, .swiper-button-next9,
+    .swiper-button-prev10, .swiper-button-next10 {
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .card__content7, .card__content8, .card__content9, .card__content10 {
+        margin-inline: 0.5rem;
+        padding-left: 0.25rem;
+        padding-right: 1rem;
+    }
+
+    .swiper-button-prev7, .swiper-button-next7,
+    .swiper-button-prev8, .swiper-button-next8,
+    .swiper-button-prev9, .swiper-button-next9,
+    .swiper-button-prev10, .swiper-button-next10 {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .card__content7, .card__content8, .card__content9, .card__content10 {
+        margin-inline: 0.25rem;
+        padding-left: 0.1rem;
+        padding-right: 0.5rem;
+    }
+
+    .swiper-button-prev7, .swiper-button-next7,
+    .swiper-button-prev8, .swiper-button-next8,
+    .swiper-button-prev9, .swiper-button-next9,
+    .swiper-button-prev10, .swiper-button-next10 {
+        font-size: 1.8rem;
+    }
 }
 
 /*=============== Team 8- IPR & Research ===============*/
@@ -1087,13 +1882,68 @@ hr {
 /* Responsive Styling */
 
 @media (max-width: 768px) {
+    footer {
+        padding: 15px;
+    }
+
     .footerlogo {
         flex-direction: row;
         justify-content: center;
         margin-bottom: 10px;
     }
+
     .footer-content {
         font-size: 12px;
+    }
+
+    #fotrlogo {
+        width: 80px;
+    }
+
+    #icom, #icom-small {
+        width: 18px;
+        height: 18px;
+        margin: 0 3px;
+    }
+}
+
+@media (max-width: 576px) {
+    footer {
+        padding: 12px;
+    }
+
+    .footer-content {
+        font-size: 11px;
+    }
+
+    #fotrlogo {
+        width: 70px;
+    }
+
+    #icom, #icom-small {
+        width: 16px;
+        height: 16px;
+        margin: 0 2px;
+    }
+}
+
+@media (max-width: 480px) {
+    footer {
+        padding: 10px;
+    }
+
+    .footer-content {
+        font-size: 10px;
+    }
+
+    #fotrlogo {
+        width: 60px;
+    }
+
+    #icom, #icom-small {
+        width: 14px;
+        height: 14px;
+        margin: 0 2px;
     }
 }
 
@@ -1139,6 +1989,8 @@ hr {
         width: 40px;
         height: 40px;
         line-height:45px;
+        bottom: 20px;
+        right: 20px;
     }
     #button i{
         font-size:27px;
